@@ -15,6 +15,12 @@ function agregarAmigo() {
     return;
   }
 
+  // Validar que el nombre no esté duplicado
+  if (amigos.includes(nombreAmigo)) {
+    alert(`El nombre "${nombreAmigo}" ya está en la lista.`);
+    return;
+  }
+
   // Añadir el nombre al array de amigos
   amigos.push(nombreAmigo);
 
@@ -28,7 +34,7 @@ function agregarAmigo() {
 // Función para actualizar la lista de amigos en la interfaz
 function actualizarLista() {
   const listaAmigos = document.getElementById('listaAmigos');
-  
+
   // Limpiar el contenido actual de la lista
   listaAmigos.innerHTML = "";
 
@@ -42,21 +48,19 @@ function actualizarLista() {
 
 // Función para seleccionar un amigo aleatorio
 function sortearAmigo() {
-    // Validar que haya amigos disponibles
-    if (amigos.length === 0) {
-      alert("No hay amigos disponibles para sortear. Agrega al menos uno.");
-      return;
-    }
-  
-    // Generar un índice aleatorio
-    const indiceAleatorio = Math.floor(Math.random() * amigos.length);
-  
-    // Obtener el nombre sorteado
-    const amigoSorteado = amigos[indiceAleatorio];
-  
-    // Mostrar el resultado en el HTML
-    const resultado = document.getElementById('resultado');
-    resultado.innerHTML = `Amigo sorteado: <strong>${amigoSorteado}</strong>`;
+  // Validar que haya amigos disponibles
+  if (amigos.length === 0) {
+    alert("No hay amigos disponibles para sortear. Agrega al menos uno.");
+    return;
   }
-  
 
+  // Generar un índice aleatorio
+  const indiceAleatorio = Math.floor(Math.random() * amigos.length);
+
+  // Obtener el nombre sorteado
+  const amigoSorteado = amigos[indiceAleatorio];
+
+  // Mostrar el resultado en el HTML
+  const resultado = document.getElementById('resultado');
+  resultado.innerHTML = `Amigo sorteado: <strong>${amigoSorteado}</strong>`;
+}
