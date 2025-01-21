@@ -1,6 +1,7 @@
-# Challenge amigo secreto
+# Descripción del Challenge "Amigo Secreto" de Alura Latam
 
-Este código implementa una funcionalidad básica de gestión y sorteo de amigos, con tres funciones principales que separan claramente las responsabilidades del flujo de la aplicación.
+Este proyecto corresponde a un desafío de programación propuesto por Alura Latam como parte de su curso de desarrollo web. El reto tiene como objetivo implementar una aplicación que gestione un juego clásico de "Amigo Secreto", donde los usuarios pueden agregar nombres a una lista de amigos, evitar duplicados, y realizar un sorteo aleatorio para asignar un "Amigo Secreto" a cada participante. A lo largo de este desafío, se pone énfasis en la lógica de programación, la manipulación del DOM, y la correcta validación de entradas. El código desarrollado permite agregar, visualizar y sortear amigos, asegurando una experiencia de usuario interactiva y libre de errores, como nombres duplicados.
+
 
 1. **Array de amigos (`let amigos = []`)**:  
    Se utiliza para almacenar los nombres de los amigos, los cuales son agregados, listados y sorteados a lo largo de la ejecución del código.
