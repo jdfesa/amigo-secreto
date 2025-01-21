@@ -1,3 +1,3 @@
-#Challenge amigo secreto
+# Challenge amigo secreto
 
-Comenzando con el desafio.
+Aplicación web para realizar sorteos de una lista de amigos.
